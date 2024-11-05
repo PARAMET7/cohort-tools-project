@@ -41,9 +41,10 @@ app.use("/api/users", userRoutes); // Add user routes
 app.get("/", (req, res) => {
   res.send("Welcome to the Cohort Tools API!");
 });
+
 app.use("/auth", authRoutes);
 // Start server
-const PORT = process.env.PORT || 5006;
+const PORT = process.env.PORT || 5007;
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });

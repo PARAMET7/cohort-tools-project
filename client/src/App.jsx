@@ -1,5 +1,4 @@
 import {useState } from "react";
-import "./App.css";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
@@ -39,7 +38,7 @@ function App() {
           <Route path="/login" element={<IsAnon><LoginPage /></IsAnon>} />
           <Route path="/signup" element={<IsAnon><SignupPage /></IsAnon>} />
 
-          
+
         </Routes>
       </div>
 

@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js && open http://localhost:5006"
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
