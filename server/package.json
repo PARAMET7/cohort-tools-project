@@ -4,8 +4,8 @@
   "description": "ExpressJS API for the Cohort Tools app",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "nodemon app.js && open http://localhost:5006"
   },
   "repository": {
     "type": "git",
@@ -18,15 +18,20 @@
   },
   "homepage": "https://github.com/ironhack-labs/cohort-tools-project#readme",
   "dependencies": {
-    "cookie-parser": "^1.4.6",
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.7",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
+    "express-jwt": "^8.4.1",
+    "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.10.0",
     "mongoose": "^8.7.3",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "open": "^10.1.0"
   },
   "keywords": [],
   "devDependencies": {
+    "bcryptjs": "^2.4.3",
     "nodemon": "^3.1.7"
   }
 }
